@@ -9,12 +9,14 @@ export default function poultryFactory({
   description = faker.lorem.word(200),
   address = addressFactory(),
   active = true,
+  foundationDate = faker.date.past(),
 }: Partial<IPoultry> = {}): Required<IPoultry> {
   return {
     id,
     description,
     address,
     name,
-    active
+    active,
+    foundationDate
   };
 }
