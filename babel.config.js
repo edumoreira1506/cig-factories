@@ -12,6 +12,6 @@ module.exports = {
   ],
   plugins: [],
   ignore: [
-    '**/*.test.ts'
+    'src/__tests__'
   ]
 };
