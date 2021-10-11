@@ -10,7 +10,8 @@ export default function breederFactory({
   address = addressFactory(),
   active = true,
   foundationDate = faker.date.past(),
-  profileImageUrl = 'breeders/profile/placeholder-user.png'
+  profileImageUrl = 'breeders/profile/placeholder-user.png',
+  mainVideo = 'https://www.youtube.com/watch?v=nYXozvQaEUI'
 }: Partial<IBreeder> = {}): Required<IBreeder> {
   return {
     id,
@@ -19,6 +20,7 @@ export default function breederFactory({
     name,
     active,
     foundationDate,
-    profileImageUrl
+    profileImageUrl,
+    mainVideo
   };
 }
