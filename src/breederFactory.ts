@@ -21,6 +21,7 @@ export default function breederFactory({
     active,
     foundationDate,
     profileImageUrl,
-    mainVideo
+    mainVideo,
+    images: []
   };
 }
