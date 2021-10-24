@@ -23,6 +23,7 @@ export default function breederFactory({
     foundationDate,
     profileImageUrl,
     mainVideo,
-    images
+    images,
+    code: ''
   };
 }

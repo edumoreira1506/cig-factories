@@ -9,7 +9,10 @@ export default function poultryFactory({
     shins: faker.commerce.color()
   },
   id = faker.datatype.uuid(),
-  videos = {}
+  videos = {},
+  description = faker.lorem.sentence(150),
+  name = faker.name.findName(),
+  register = faker.datatype.number().toString()
 }: Partial<IPoultry> = {}): Required<IPoultry> {
   return {
     active: true,
@@ -18,5 +21,12 @@ export default function poultryFactory({
     id,
     type: 'INDIO_GIGANTE',
     videos,
+    description,
+    tail: 'MEDIA',
+    crest: 'ERVILHA',
+    dewlap: 'AUSENCIA_TOTAL',
+    gender: 'MATRIZ',
+    name,
+    register
   };
 }
