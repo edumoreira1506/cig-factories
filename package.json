@@ -1,6 +1,6 @@
 {
 	"name": "@cig-platform/factories",
-	"version": "0.0.9",
+	"version": "0.0.10",
 	"description": "",
 	"main": "build/index.js",
 	"types": "build/index.d.ts",
@@ -18,7 +18,7 @@
 	"bugs": {},
 	"homepage": "",
 	"dependencies": {
-		"@cig-platform/types": "0.0.14",
+		"@cig-platform/types": "0.0.17",
 		"faker": "^5.5.3"
 	},
 	"devDependencies": {
