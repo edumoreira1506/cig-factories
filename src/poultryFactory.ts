@@ -12,7 +12,9 @@ export default function poultryFactory({
   videos = {},
   description = faker.lorem.sentence(150),
   name = faker.name.findName(),
-  register = faker.datatype.number().toString()
+  register = faker.datatype.number().toString(),
+  genderCategory = 'MATRIZ',
+  gender = 'FEMEA'
 }: Partial<IPoultry> = {}): Required<IPoultry> {
   return {
     active: true,
@@ -25,8 +27,9 @@ export default function poultryFactory({
     tail: 'MEDIA',
     crest: 'ERVILHA',
     dewlap: 'AUSENCIA_TOTAL',
-    gender: 'MATRIZ',
+    gender,
     name,
-    register
+    register,
+    genderCategory
   };
 }
