@@ -18,7 +18,7 @@
 	"bugs": {},
 	"homepage": "",
 	"dependencies": {
-		"@cig-platform/types": "0.0.14",
+		"@cig-platform/types": "0.0.17",
 		"faker": "^5.5.3"
 	},
 	"devDependencies": {
