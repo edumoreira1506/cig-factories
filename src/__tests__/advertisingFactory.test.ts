@@ -1,6 +1,6 @@
 import faker from 'faker';
 
-import { advertisingFactory } from '../advertisingFactory';
+import { advertisingFactory } from '..';
 
 describe('advertisingFactory', () => {
   it('applies the id value', () => {

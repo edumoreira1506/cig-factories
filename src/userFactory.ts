@@ -1,16 +1,16 @@
 import faker from 'faker';
 import { IUser } from '@cig-platform/types';
 
-import registerFactory from './registerFactory';
+import { registerFactory } from '..';
 
-export default function userFactory({
+export const userFactory = ({
   id = faker.datatype.uuid(),
   email = faker.internet.email(),
   password = faker.internet.password(),
   name = faker.name.findName(),
   birthDate = faker.date.past(),
   register = registerFactory()
-}: Partial<IUser> = {}): Required<IUser> {
+}: Partial<IUser> = {}): Required<IUser> => {
   const confirmPassword = password;
 
   return {
@@ -22,4 +22,4 @@ export default function userFactory({
     birthDate,
     confirmPassword,
   };
-}
+};

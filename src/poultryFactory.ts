@@ -1,7 +1,7 @@
 import faker from 'faker';
 import { IPoultry } from '@cig-platform/types';
 
-export default function poultryFactory({
+export const poultryFactory = ({
   birthDate = faker.date.past(),
   colors = {
     eyes: faker.commerce.color(),
@@ -15,7 +15,7 @@ export default function poultryFactory({
   register = faker.datatype.number().toString(),
   genderCategory = 'MATRIZ',
   gender = 'FEMEA'
-}: Partial<IPoultry> = {}): Required<IPoultry> {
+}: Partial<IPoultry> = {}): Required<IPoultry> => {
   return {
     active: true,
     birthDate,
@@ -32,4 +32,4 @@ export default function poultryFactory({
     register,
     genderCategory
   };
-}
+};

@@ -1,7 +1,7 @@
 import faker from 'faker';
 import { IBreederAddress } from '@cig-platform/types';
 
-export default function breederAddressFactory({
+export const breederAddressFactory = ({
   city = faker.address.cityName(),
   province = 'SP',
   street = faker.address.streetName(),
@@ -9,7 +9,7 @@ export default function breederAddressFactory({
   number = faker.datatype.number(1000),
   longitude = Number(faker.address.longitude()),
   latitude = Number(faker.address.latitude())
-}: Partial<IBreederAddress> = {}): Required<IBreederAddress> {
+}: Partial<IBreederAddress> = {}): Required<IBreederAddress> => {
   return {
     city,
     province,
@@ -19,4 +19,4 @@ export default function breederAddressFactory({
     latitude,
     longitude,
   };
-}
+};
