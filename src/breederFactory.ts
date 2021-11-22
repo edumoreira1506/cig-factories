@@ -1,9 +1,9 @@
 import faker from 'faker';
 import { IBreeder, IBreederImage } from '@cig-platform/types';
 
-import addressFactory from './breederAddressFactory';
+import { breederAddressFactory as addressFactory } from '.';
 
-export default function breederFactory({
+export const breederFactory = ({
   id = faker.datatype.uuid(),
   name = faker.name.findName(),
   description = faker.lorem.word(200),
@@ -13,7 +13,7 @@ export default function breederFactory({
   profileImageUrl = 'breeders/profile/placeholder-user.png',
   mainVideo = 'https://www.youtube.com/watch?v=nYXozvQaEUI',
   images = [] as IBreederImage []
-}: Partial<IBreeder> = {}): Required<IBreeder> {
+}: Partial<IBreeder> = {}): Required<IBreeder> => {
   return {
     id,
     description,
@@ -26,4 +26,4 @@ export default function breederFactory({
     images,
     code: ''
   };
-}
+};

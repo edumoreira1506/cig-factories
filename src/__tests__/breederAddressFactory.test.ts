@@ -1,6 +1,6 @@
 import faker from 'faker';
 
-import { breederAddressFactory } from '../';
+import { breederAddressFactory } from '..';
 
 describe('breederAddressFactory', () => {
   it('applies the city value', () => {

@@ -1,7 +1,8 @@
-export { default as userFactory } from './userFactory';
-export { default as breederAddressFactory } from './breederAddressFactory';
-export { default as breederFactory } from './breederFactory';
-export { default as breederUserFactory } from './breederUserFactory';
-export { default as registerFactory } from './registerFactory';
-export { default as poultryFactory } from './poultryFactory';
+export * from './userFactory';
+export * from './breederAddressFactory';
+export * from './breederFactory';
+export * from './breederUserFactory';
+export * from './registerFactory';
+export * from './poultryFactory';
 export * from './merchantFactory';
+export * from './advertisingFactory';

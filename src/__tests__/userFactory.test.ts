@@ -1,7 +1,6 @@
 import faker from 'faker';
 
-import registerFactory from '../registerFactory';
-import { userFactory } from '../';
+import { userFactory, registerFactory } from '..';
 
 describe('userFactory', () => {
   it('applies the id value', () => {

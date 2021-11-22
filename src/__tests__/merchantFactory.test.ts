@@ -1,6 +1,6 @@
 import faker from 'faker';
 
-import { merchantFactory } from '../merchantFactory';
+import { merchantFactory } from '..';
 
 describe('merchantFactory', () => {
   it('applies the id value', () => {
