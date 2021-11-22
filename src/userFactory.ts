@@ -1,7 +1,7 @@
 import faker from 'faker';
 import { IUser } from '@cig-platform/types';
 
-import { registerFactory } from '..';
+import { registerFactory } from '.';
 
 export const userFactory = ({
   id = faker.datatype.uuid(),

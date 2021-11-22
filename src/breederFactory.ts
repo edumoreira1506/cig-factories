@@ -1,7 +1,7 @@
 import faker from 'faker';
 import { IBreeder, IBreederImage } from '@cig-platform/types';
 
-import { breederAddressFactory as addressFactory } from '..';
+import { breederAddressFactory as addressFactory } from '.';
 
 export const breederFactory = ({
   id = faker.datatype.uuid(),
