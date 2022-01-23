@@ -7,12 +7,14 @@ export const poultryRegisterFactory = ({
   poultryId = faker.datatype.uuid(),
   description = faker.lorem.sentences(3),
   type = 'ANÚNCIO',
-  files = []
+  files = [],
+  metadata = {}
 }: Partial<IPoultryRegister> = {}): Required<IPoultryRegister> => ({
   id,
   date,
   poultryId,
   description,
   files,
-  type
+  type,
+  metadata
 });

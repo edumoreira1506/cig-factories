@@ -14,7 +14,8 @@ export const poultryFactory = ({
   name = faker.name.findName(),
   register = faker.datatype.number().toString(),
   genderCategory = 'MATRIZ',
-  gender = 'FEMEA'
+  gender = 'FEMEA',
+  number = faker.datatype.number()
 }: Partial<IPoultry> = {}): Required<IPoultry> => {
   return {
     active: true,
@@ -30,6 +31,7 @@ export const poultryFactory = ({
     gender,
     name,
     register,
-    genderCategory
+    genderCategory,
+    number
   };
 };
