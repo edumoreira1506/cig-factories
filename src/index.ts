@@ -7,3 +7,4 @@ export * from './poultryFactory';
 export * from './merchantFactory';
 export * from './advertisingFactory';
 export * from './poultryRegisterFactory';
+export * from './dealFactory';
