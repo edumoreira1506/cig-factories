@@ -9,7 +9,8 @@ export const userFactory = ({
   password = faker.internet.password(),
   name = faker.name.findName(),
   birthDate = faker.date.past(),
-  register = registerFactory()
+  register = registerFactory(),
+  registerType = 'default'
 }: Partial<IUser> = {}): Required<IUser> => {
   const confirmPassword = password;
 
@@ -21,5 +22,6 @@ export const userFactory = ({
     register,
     birthDate,
     confirmPassword,
+    registerType
   };
 };
