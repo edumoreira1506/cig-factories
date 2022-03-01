@@ -44,4 +44,11 @@ describe('userFactory', () => {
 
     expect(user.register).toBe(register);
   });
+
+  it('applies the registerType value', () => {
+    const registerType = 'default';
+    const user = userFactory({ registerType });
+
+    expect(user.registerType).toBe(registerType);
+  });
 });
