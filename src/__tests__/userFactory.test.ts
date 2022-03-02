@@ -45,6 +45,13 @@ describe('userFactory', () => {
     expect(user.register).toBe(register);
   });
 
+  it('applies the externalId value', () => {
+    const externalId = 'external id';
+    const user = userFactory({ externalId });
+
+    expect(user.externalId).toBe(externalId);
+  });
+
   it('applies the registerType value', () => {
     const registerType = 'default';
     const user = userFactory({ registerType });

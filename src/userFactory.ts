@@ -10,7 +10,8 @@ export const userFactory = ({
   name = faker.name.findName(),
   birthDate = faker.date.past(),
   register = registerFactory(),
-  registerType = 'default'
+  registerType = 'default',
+  externalId = faker.datatype.uuid()
 }: Partial<IUser> = {}): Required<IUser> => {
   const confirmPassword = password;
 
@@ -22,6 +23,7 @@ export const userFactory = ({
     register,
     birthDate,
     confirmPassword,
-    registerType
+    registerType,
+    externalId
   };
 };
