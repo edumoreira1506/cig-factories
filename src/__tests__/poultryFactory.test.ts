@@ -3,6 +3,13 @@ import faker from 'faker';
 import { poultryFactory } from '..';
 
 describe('poultryFactory', () => {
+  it('applies the currentAdvertisingPrice value', () => {
+    const currentAdvertisingPrice = null;
+    const poultry = poultryFactory({ currentAdvertisingPrice });
+
+    expect(poultry.currentAdvertisingPrice).toBe(currentAdvertisingPrice);
+  });
+
   it('applies the id value', () => {
     const id = faker.datatype.uuid();
     const poultry = poultryFactory({ id });
