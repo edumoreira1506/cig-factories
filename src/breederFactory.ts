@@ -12,7 +12,9 @@ export const breederFactory = ({
   foundationDate = faker.date.past(),
   profileImageUrl = 'breeders/profile/placeholder-user.png',
   mainVideo = 'https://www.youtube.com/watch?v=nYXozvQaEUI',
-  images = [] as IBreederImage []
+  images = [] as IBreederImage [],
+  createdAt = faker.date.past(),
+  code = 'ABCD'
 }: Partial<IBreeder> = {}): Required<IBreeder> => {
   return {
     id,
@@ -24,6 +26,7 @@ export const breederFactory = ({
     profileImageUrl,
     mainVideo,
     images,
-    code: ''
+    code,
+    createdAt
   };
 };
