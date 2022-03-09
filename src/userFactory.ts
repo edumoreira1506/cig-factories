@@ -1,4 +1,4 @@
-import faker from 'faker';
+import faker from '@faker-js/faker';
 import { IUser } from '@cig-platform/types';
 
 import { registerFactory } from '.';

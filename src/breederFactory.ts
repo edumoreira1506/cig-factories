@@ -1,4 +1,4 @@
-import faker from 'faker';
+import faker from '@faker-js/faker';
 import { IBreeder, IBreederImage } from '@cig-platform/types';
 
 import { breederAddressFactory as addressFactory } from '.';
