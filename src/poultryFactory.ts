@@ -1,4 +1,4 @@
-import faker from 'faker';
+import faker from '@faker-js/faker';
 import { IPoultry } from '@cig-platform/types';
 
 export const poultryFactory = ({
