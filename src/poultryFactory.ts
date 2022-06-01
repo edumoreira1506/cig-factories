@@ -17,9 +17,10 @@ export const poultryFactory = ({
   gender = 'FEMEA',
   number = faker.datatype.number(),
   forSale = false,
-  currentAdvertisingPrice = faker.datatype.number()
+  isAlive = true
 }: Partial<IPoultry> = {}): Required<IPoultry> => {
   return {
+    isAlive,
     active: true,
     birthDate,
     colors,
@@ -36,6 +37,5 @@ export const poultryFactory = ({
     genderCategory,
     number,
     forSale,
-    currentAdvertisingPrice
   };
 };
