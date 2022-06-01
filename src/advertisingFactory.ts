@@ -6,11 +6,15 @@ export const advertisingFactory = ({
   externalId = faker.lorem.word(),
   merchantId = faker.datatype.uuid(),
   price = faker.datatype.number(),
-  finished = false
+  finished = false,
+  metadata = {},
+  favoritesAmount = faker.datatype.number()
 }: Partial<IAdvertising> = {}): Required<IAdvertising> => ({
   id,
   externalId,
   merchantId,
   price,
-  finished
+  finished,
+  metadata,
+  favoritesAmount
 });
