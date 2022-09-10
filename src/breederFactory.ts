@@ -1,5 +1,5 @@
-import faker from '@faker-js/faker';
-import { IBreeder, IBreederImage } from '@cig-platform/types';
+import { faker } from '@faker-js/faker';
+import { IBreeder, IBreederImage } from '@cig-platform/types/build';
 
 import { breederAddressFactory as addressFactory } from '.';
 

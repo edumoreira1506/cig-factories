@@ -1,5 +1,5 @@
-import faker from '@faker-js/faker';
-import { IPoultryRegister } from '@cig-platform/types';
+import { faker } from '@faker-js/faker';
+import { IPoultryRegister } from '@cig-platform/types/build';
 
 export const poultryRegisterFactory = ({
   id = faker.datatype.uuid(),

@@ -1,5 +1,5 @@
-import faker from '@faker-js/faker';
-import { IMerchant } from '@cig-platform/types';
+import { faker } from '@faker-js/faker';
+import { IMerchant } from '@cig-platform/types/build';
 
 export const merchantFactory = ({
   id = faker.datatype.uuid(),

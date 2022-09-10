@@ -1,5 +1,5 @@
-import faker from '@faker-js/faker';
-import { IDeal } from '@cig-platform/types';
+import { faker } from '@faker-js/faker';
+import { IDeal } from '@cig-platform/types/build';
 
 export const dealFactory = ({
   id = faker.datatype.uuid(),

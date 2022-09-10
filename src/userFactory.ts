@@ -1,5 +1,5 @@
-import faker from '@faker-js/faker';
-import { IUser } from '@cig-platform/types';
+import { faker } from '@faker-js/faker';
+import { IUser } from '@cig-platform/types/build';
 
 import { registerFactory } from '.';
 

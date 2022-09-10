@@ -1,5 +1,5 @@
-import faker from '@faker-js/faker';
-import { IBreederAddress } from '@cig-platform/types';
+import { faker } from '@faker-js/faker';
+import { IBreederAddress } from '@cig-platform/types/build';
 
 export const breederAddressFactory = ({
   city = faker.address.cityName(),
